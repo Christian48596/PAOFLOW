@@ -1,0 +1,11 @@
+* text=auto
+
+# Always LF in WSL/Linux for code and input files
+.gitattributes text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.in text eol=lf
+
+# Windows-native filetypes (only if you actually have them)
+*.bat text eol=crlf
+*.sln text eol=crlf
