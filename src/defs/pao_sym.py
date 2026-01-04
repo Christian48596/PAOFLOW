@@ -993,7 +993,8 @@ def open_grid(Hksp,full_grid,kp,symop,symop_cart,atom_pos,shells,a_index,equiv_a
         nfft2=nk2+upscale2
         nfft3=nk3+upscale3
 
-        full_grid_interp = get_full_grid(nfft1,nfft2,nfft3,o1,o2,o3)
+        #full_grid_interp = get_full_grid(nfft1,nfft2,nfft3,o1,o2,o3)
+        full_grid_interp = get_full_grid(nfft1,nfft2,nfft3,o1=0,o2=0,o3=0)
         nkl=[]
         partial_grid_interp = scatter_full(full_grid_interp,npool)
         for i in range(partial_grid_interp.shape[0]):
